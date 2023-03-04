@@ -84,7 +84,7 @@ function styleLibs(){
 function styles(){
     return src('app/scss/**/*.scss')
         // .pipe(sourcemaps.init())
-        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(sass({outputStyle: 'expanded'}))
         .pipe(concat('style.min.css'))
         // .pipe(sourcemaps.write())
         .pipe(autoprefixer({
