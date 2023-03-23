@@ -342,3 +342,32 @@ background-color: #fff;
 }
 
 // end author
+// star tutorial
+
+.tutorial{
+padding: 60px 0px 120px;
+&__inner{
+display: flex;
+justify-content: space-between;
+}
+}
+.tutorial__item{
+max-width: 370px;
+width: 100%;
+&-images{
+min-height: 270px;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+&-title{
+background-color: #f8f8f8;
+font-size: 24px;
+text-align: center;
+padding: 30px 10px;
+@include f700;
+color: $bg;
+}
+}
+
+// end tutorial
