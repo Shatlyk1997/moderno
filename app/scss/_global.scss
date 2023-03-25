@@ -51,3 +51,15 @@ margin-right: 13px;
 padding: 0px 15px;
 }
 }
+.angle-right{
+position: relative;
+padding-left: 15px;
+&::before{
+position: absolute;
+font-family: 'icomoon';
+content: '\f105';
+font-size: 14px;
+color: $green;
+left: 0;
+}
+}
