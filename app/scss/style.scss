@@ -104,6 +104,7 @@ background-color: $green;
 .header__box{
 display: flex;
 align-items: center;
+position: relative;
 }
 .header__btn-login--off{
 display: none;
@@ -155,6 +156,7 @@ color: $green;
 position: relative;
 height: 90px;
 margin-top: 40px;
+z-index: 1;
 &:hover{
 .user__menu{
 height: auto;
@@ -303,7 +305,13 @@ font-size: 10px;
 color: #90a4ae;
 }
 }
-
+.header__btn-menu,
+.menu__btn{
+display: none;
+}
+.wrapper{
+height: 370px;
+}
 // end header
 // start search
 
@@ -344,6 +352,7 @@ font-size: 14px;
 @include f500;
 padding-left: 25px;
 padding-right: 60px;
+outline: none;
 &::placeholder{
 color: #95a2ac;
 @include f500;
@@ -357,6 +366,19 @@ right: 20px;
 top: 18px;
 }
 }
+}
+.search-page{
+min-height: 230px;
+}
+.page-text{
+font-size: 20px;
+line-height: 30px;
+@include f500;
+margin-bottom: 15px;
+}
+.page-inner{
+padding-top: 60px;
+padding-bottom: 60px;
 }
 
 // end search
@@ -775,3 +797,5 @@ font-family: 'icomoon';
 }
 }
 // end footer
+
+@import 'media';
